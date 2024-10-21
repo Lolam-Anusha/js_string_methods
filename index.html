@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <script>
+        const a="     ";
+        console.log(a.length)                    //5
+
+        const b = "       asdgghjk      ";
+        console.log(b.trim())                   //asdgghjk
+        console.log(b.trim().length)            //8
+
+        const c = "         asdfgh         ";
+        console.log(c.trimStart());             //asdfgh.......
+        console.log(c.trimEnd());               //......asdfgh
+
+        const d = "     sda    sdfgfg        ";
+        console.log(d.trim())                  //sda    sdfgfg
+
+        const e = "   Karunakar";
+        const e2 = e.trim(); 
+        console.log(e);                        //   karunakar
+        console.log(e2);                       //karunakar
+
+        const f = "KaruNaKAR";
+        console.log(f.toLowerCase());         //karunakar
+
+        const g = "karunakar";
+        console.log(g.toUpperCase());         //KARUNAKAR
+
+        console.log(g.startsWith("k"));       //true
+
+        console.log(g.endsWith("a"));         //false
+
+        console.log(g.endsWith("R"));         //false
+
+        console.log(g.charAt(3));             //u
+
+        console.log(g.indexOf("u"));          //3
+
+        console.log(g.lastIndexOf("r"))       //8
+
+        console.log(g.indexOf("l"));          //-1
+    </script>
+</body>
+</html>
